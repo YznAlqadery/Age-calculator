@@ -1,0 +1,92 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 86%);
+}
+.container {
+  width: 300px;
+  margin: 40px auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 22px;
+}
+.input_div {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  padding-bottom: 40px;
+  border-bottom: 3px solid hsl(0, 0%, 86%);
+}
+.labels {
+  display: flex;
+  gap: 80px;
+}
+label {
+  color: hsl(0, 1%, 44%);
+  font-size: 12px;
+}
+input {
+  padding: 6px;
+  width: 70px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 94%);
+}
+.age_div {
+  margin: 50px 10px;
+  font-size: 40px;
+}
+.calc_age {
+  cursor: pointer;
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  top: 1;
+  left: 10;
+  margin-left: 120px;
+  margin-top: -30px;
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+p,
+span {
+  font-style: italic;
+  font-weight: 700;
+}
+.error {
+  color: hsl(0, 100%, 67%);
+}
+.calc_age:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+@media screen and (width > 600px) {
+  input {
+    width: 150px;
+    padding: 15px;
+  }
+  .container {
+    width: 800px;
+  }
+  .input_div,
+  .labels {
+    justify-content: center;
+  }
+  .calc_age {
+    position: sticky;
+    margin-left: 700px;
+  }
+  .age_div {
+    text-align: center;
+    font-size: 50px;
+  }
+  label {
+    font-size: 20px;
+  }
+}

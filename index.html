@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="labels">
+            <label class="day_label">DAY</label>
+            <label class="month_label">MONTH</label>
+            <label class="year_label">YEAR</label>
+          </div>
+          <div class="input_div">
+            <input class="day_input" type="number" required placeholder="DD" />
+            <input
+              class="month_input"
+              type="number"
+              required
+              placeholder="MM"
+            />
+
+            <input
+              class="year_input"
+              type="number"
+              required
+              placeholder="YYYY"
+            />
+          </div>
+          <button class="calc_age">
+            <img src="assets/images/icon-arrow.svg" />
+          </button>
+          <div class="age_div">
+            <p class="total_year"><span class="year_span">- -</span> years</p>
+            <p class="total_month">
+              <span class="month_span">- -</span> months
+            </p>
+            <p class="total_days"><span class="day_span">- -</span> days</p>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </section>
+    </main>
+  </body>
+</html>
